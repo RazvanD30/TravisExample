@@ -3,7 +3,7 @@ sudo: false
 install: true
 addons:
   sonarqube:
-    organization: "RazvanD30"
+    organization: "razvand30-github"
     branches:
       - master
       - develop
