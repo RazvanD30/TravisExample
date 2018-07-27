@@ -16,6 +16,8 @@ script:
 jdk:
   - oraclejdk8
 script:
+  - sonar.branch = master
   # the following command line builds the project, runs the tests with coverage and then  execute the SonarQube analysis
-  -Dsonar.branch=master
+  
+script:
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
